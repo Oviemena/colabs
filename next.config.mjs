@@ -9,11 +9,11 @@ const nextConfig = {
   }
 };
 
-export default withSentryConfig(nextConfig, {
+export default withSentryConfig(withSentryConfig(withSentryConfig(nextConfig, {
 // For all available options, see:
 // https://github.com/getsentry/sentry-webpack-plugin#options
 
-org: "jsm-x9",
+org: "mena-in",
 project: "javascript-nextjs",
 
 // Only print logs for uploading source maps in CI
@@ -42,4 +42,4 @@ disableLogger: true,
 // https://docs.sentry.io/product/crons/
 // https://vercel.com/docs/cron-jobs
 automaticVercelMonitors: true,
-});
+})));

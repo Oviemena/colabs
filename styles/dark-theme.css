@@ -7,6 +7,11 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
+/* 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+} */
 
 body {
   margin: 0;
@@ -164,6 +169,7 @@ body {
   text-align: right;
   min-width: 25px;
 }
+
 .editor-code:after {
   content: attr(data-highlight-language);
   top: 0;

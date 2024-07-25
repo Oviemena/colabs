@@ -5,8 +5,9 @@ import { parseStringify } from "../utils";
 import { liveblocks } from "../liveblocks";
 
 export const getClerkUsers = async ({ userIds }: { userIds: string[]}) => {
+  const clerk = clerkClient()
   try {
-    const { data } = await clerkClient.users.getUserList({
+    const { data } = await clerk.users.getUserList({
       emailAddress: userIds,
     });
 

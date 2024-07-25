@@ -13,7 +13,7 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: 'LiveDocs',
+  title: 'Colabs',
   description: 'Your go-to collaborative editor',
 }
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         baseTheme: dark,
         variables: { 
           colorPrimary: "#3371FF" ,
-          fontSize: '16px'
+          fontSize: '1.25rem'
         },
       }}
     >
