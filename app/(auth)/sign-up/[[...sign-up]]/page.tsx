@@ -4,7 +4,7 @@ import SignUpForm from '../sign-up'
 const SignUpPage = () => {
   return (
     <main className="auth-page">
-      <SignUp />
+      {/* <SignUp /> */}
       <SignUpForm/>
     </main>
   )
